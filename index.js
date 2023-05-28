@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 
 app.use(cors());
@@ -30,8 +30,8 @@ let persons = [
 ];
 
 function generateId() {
-  const maxId = db.length > 0
-    ? Math.max(...db.map(n => n.id))
+  const maxId = persons.length > 0
+    ? Math.max(...persons.map(n => n.id))
     : 0;
   return maxId + 1;
 };
