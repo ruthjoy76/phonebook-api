@@ -36,10 +36,6 @@ function generateId() {
   return maxId + 1;
 };
 
-app.get("/", (_request, response) => {
-  response.send("<h1>Hello, WD56P!</h1>");
-});
-
 app.get('/api/persons', (_request, response) => {
   response.status(200).json(persons);
 });
