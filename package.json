@@ -1,0 +1,22 @@
+{
+  "name": "c",
+  "version": "0.0.1",
+  "description": "A simple contact app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev":"nodemon index.js"
+  },
+  "keywords": [
+    "contact"
+  ],
+  "author": "WD56P Group 1",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
